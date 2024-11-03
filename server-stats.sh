@@ -47,6 +47,11 @@ do
       echo "Getting total cpu usage. pls wait..."
       ./cpu_usage.sh
       ;;
+
+    total_memory_usage)
+      echo "Getting total memory usage. Pls wait..."
+      ./total_memory_usage.sh
+      ;;
     
     *)
       echo "Invalid input. Accepted values are {total-usage|total-memory-usage|total-disk-usage|top-five-cpu-ps|top-five-memory-ps}"
