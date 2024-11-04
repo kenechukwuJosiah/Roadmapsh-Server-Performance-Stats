@@ -53,7 +53,14 @@ do
       ./total_memory_usage.sh
       ;;
 
-    disk-stat
+    disk-stat)
+      echo "Getting total disk stat. Pls wait..."
+      ./total_disk_usage.sh
+      ;;
+    top-five-cpu-ps)
+      ./top_five_cpu_process.sh
+      ;;
+    
     
     *)
       echo "Invalid input. Accepted values are {cpu-stat|memory-stat|disk-stat|top-five-cpu-ps|top-five-memory-ps}"
