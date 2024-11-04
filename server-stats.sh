@@ -23,7 +23,7 @@ do
       ;;
     *)
       echo "Unknown option: $1"
-      echo "Usage: $0 --run={total-usage|total-memory-usage|total-disk-usage|top-five-cpu-ps|top-five-memory-ps} ..."
+      echo "Invalid input. Accepted values are {cpu-stat|memory-stat|disk-stat|top-five-cpu-ps|top-five-memory-ps}"
       exit 1
       ;;
   esac
@@ -32,7 +32,7 @@ done
 
 # Check if there's an argument
 if [ ${#scripts[@]} -eq 0 ]; then
-  echo "No scripts specified to run. Please use --run={total-usage|total-memory-usage|total-disk-usage|top-five-cpu-ps|top-five-memory-ps} ...}"
+    echo "Invalid input. Accepted values are {cpu-stat|memory-stat|disk-stat|top-five-cpu-ps|top-five-memory-ps}"
   exit 1
 fi
 
@@ -43,18 +43,20 @@ echo "Scripts to run: ${scripts[@]}"
 for script in ${scripts[@]}
 do
   case $script in
-    total-usage)
+    cpu-stat)
       echo "Getting total cpu usage. pls wait..."
       ./cpu_usage.sh
       ;;
 
-    total_memory_usage)
+    memory-stat)
       echo "Getting total memory usage. Pls wait..."
       ./total_memory_usage.sh
       ;;
+
+    disk-stat
     
     *)
-      echo "Invalid input. Accepted values are {total-usage|total-memory-usage|total-disk-usage|top-five-cpu-ps|top-five-memory-ps}"
+      echo "Invalid input. Accepted values are {cpu-stat|memory-stat|disk-stat|top-five-cpu-ps|top-five-memory-ps}"
       exit 1
   esac
 done
