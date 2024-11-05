@@ -21,3 +21,6 @@ To run the script, provide one or more `--run` arguments specifying the system s
 ```bash
 ./server-stats.sh --run=<command> | --run <command>
 ```
+
+## Project url
+https://github.com/kenechukwuJosiah/Roadmapsh-Server-Performance-Stats
