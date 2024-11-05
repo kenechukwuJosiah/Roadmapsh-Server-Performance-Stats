@@ -23,4 +23,4 @@ To run the script, provide one or more `--run` arguments specifying the system s
 ```
 
 ## Project url
-https://github.com/kenechukwuJosiah/Roadmapsh-Server-Performance-Stats
+[https://github.com/kenechukwuJosiah/Roadmapsh-Server-Performance-Stats](https://roadmap.sh/projects/server-stats)
