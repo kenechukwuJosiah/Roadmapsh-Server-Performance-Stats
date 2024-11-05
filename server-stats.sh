@@ -60,7 +60,10 @@ do
     top-five-cpu-ps)
       ./top_five_cpu_process.sh
       ;;
-    
+
+    top-five-memory-ps)
+      ./top_five_memory_usage.sh
+      ;;
     
     *)
       echo "Invalid input. Accepted values are {cpu-stat|memory-stat|disk-stat|top-five-cpu-ps|top-five-memory-ps}"
